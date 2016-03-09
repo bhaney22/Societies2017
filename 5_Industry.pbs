@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=1:mem=4gb,walltime=3:00:00
+#PBS -m a -M jgsherw@clemson.edu
+
+cd /home/jgsherw/Dahl/Dahl_societies/src/cpp/
+
+./societies -v 1 -s Results -p Configs/Collapse5_Industry.conf -z Configs/agentcsv.csv -t 5_Industry | tee runlog_5_Industry.txt

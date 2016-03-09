@@ -1,0 +1,8 @@
+Num agents: 24
+Num days: 200
+Num resources: 24
+SumUtil:4192546
+SumRes:413099
+Your results have been saved in test
+The simulation was named removeRes0Day100_notremoveHoldings
+The total number of seconds is 90

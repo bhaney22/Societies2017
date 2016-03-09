@@ -1,0 +1,17 @@
+Done -- 1. Delete Diffusion Delay
+2. Group 0: standard
+   Group 1: inventPower = 0.01
+   See how they do.
+3. Decrease fast-gathering group's inventing speed, instead of increasing slow-gathering group's inventing speed.
+   Group 0: standard/norm
+   Group 1:
+	gathering spped -- 1.5/4.5
+	inventPower -- 0.1
+Done -- 4. Set INVENTOR_DEVICE_EXPERIENCE = MAX_DEVICE_DEPERIENCE, i.e. 40
+   Test and see the results
+Done -- 5. Rename
+   inventPower to inventSpeed
+   CrossGroup_TOtal to CrossGroup
+Done -- 6. Add both resTP and devTP together
+7. device making speed
+
