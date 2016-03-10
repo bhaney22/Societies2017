@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results -p Configs/Collapse7_Industry.conf -z Configs/agentcsv.csv -t 7_Industry | tee runlog_7_Industry.txt
+./societies -v 1 -s Results/WithoutDevDev/7 -p Configs/WithoutDevDev/NoDev_7_Industry.conf -z Configs/agentcsv.csv -t 7_Indu_unlim_NoDDev | tee runlog_7_Industry.txt

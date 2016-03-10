@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results/WithDevDev/1/WithoutStockpile -p Configs/WithDevDev/1_machine.conf -r 8 600 1 -z Configs/agentcsv.csv -t 1_mach_nosto | tee runlog_1_machine.txt
+./societies -v 1 -s Results/WithDevDev/1/WithoutStockpile -p Configs/WithDevDev/1_machine.conf -r 8 600 1 -z Configs/agentcsv.csv -t 1_mach_nosto_DevDev | tee runlog_1_machine.txt

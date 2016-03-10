@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results -p Configs/Collapse3_machine.conf -z Configs/agentcsv.csv -t 3_machine | tee runlog_3_machine.txt
+./societies -v 1 -s Results/WithoutDevDev/3 -p Configs/WithoutDevDev/NoDev_3_machine.conf -z Configs/agentcsv.csv -t 3_mach_unlim_NoDDev | tee runlog_3_machine.txt

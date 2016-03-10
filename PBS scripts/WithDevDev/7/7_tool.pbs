@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results -p Configs/Collapse7_tool.conf -z Configs/agentcsv.csv -t 7_tool | tee runlog_7_tool.txt
+./societies -v 1 -s Results/WithDevDev/7 -p Configs/WithDevDev/7_tool.conf -z Configs/agentcsv.csv -t 7_tool_unlim_DevDev | tee runlog_7_tool.txt

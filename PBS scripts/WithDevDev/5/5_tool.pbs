@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results/WithDevDev/3 -p Configs/WithDevDev/3_tool.conf -z Configs/agentcsv.csv -t 3_tool_unlim | tee runlog_3_tool.txt
+./societies -v 1 -s Results/WithDevDev/5 -p Configs/WithDevDev/5_tool.conf -z Configs/agentcsv.csv -t 5_tool_unlim_DevDev | tee runlog_5_tool.txt

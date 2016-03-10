@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_societies/src/cpp/
 
-./societies -v 1 -s Results -p Configs/Collapse1_factory.conf -z Configs/agentcsv.csv -t 1_factory | tee runlog_1_factory.txt
+./societies -v 1 -s Results/WithoutDevDev/1 -p Configs/WithoutDevDev/NoDev_1_factory.conf -z Configs/agentcsv.csv -t 1_fact_unlim_NoDDev | tee runlog_1_factory.txt
