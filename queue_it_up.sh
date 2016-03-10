@@ -1,4 +1,4 @@
-
+#Runs everything. 30 runs each of all 1,3,5,7 r/t , with and without stock, with and without DevDevs. Should be between 6,000 and 9,000 computing hours.
 echo "cd PBS_scripts/WithDevDev/1"
 for i in {1..30}
 do
@@ -73,6 +73,9 @@ do
 	qsub 7_Industry_nosto.pbs
     qsub 7_Industry_stock.pbs
 done
+
+
+
 echo "cd ../../WithoutDevDev/1"
 for i in {1..30}
 do
