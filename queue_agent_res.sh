@@ -9,10 +9,16 @@ do
 	qsub NoDev_5_12_12_nor.pbs
 	qsub NoDev_5_12_24_col.pbs
 	qsub NoDev_5_12_24_nor.pbs
+	qsub NoDev_5_12_48_col.pbs
+	qsub NoDev_5_12_48_nor.pbs
 	qsub NoDev_5_24_12_col.pbs
 	qsub NoDev_5_24_12_nor.pbs
+	qsub NoDev_5_24_24_col.pbs
+	qsub NoDev_5_24_24_nor.pbs
 	qsub NoDev_5_24_48_col.pbs
 	qsub NoDev_5_24_48_nor.pbs
+	qsub NoDev_5_48_12_col.pbs
+	qsub NoDev_5_48_12_nor.pbs
 	qsub NoDev_5_48_24_col.pbs
 	qsub NoDev_5_48_24_nor.pbs
 	qsub NoDev_5_48_48_col.pbs
