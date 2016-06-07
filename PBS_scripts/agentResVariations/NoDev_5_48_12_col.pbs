@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_Societies_CPP/
 
-./societies -v 1 -s ResultsAR/48/ -p Configs/AgentResVariations/NoDev_5_48_12.conf -r 8 600 1 -z Configs/agentcsv.csv -t 5_48_48_nosto_NoDDev | tee runlog_5_48_48.txt
+./societies -v 1 -s ResultsAR/48/ -p Configs/AgentResVariations/NoDev_5_48_12.conf -r 8 600 1 -z Configs/agentcsv.csv -t 5_48_12_nosto_NoDDev | tee runlog_5_48_12.txt
