@@ -2,7 +2,7 @@
 
 cd PBS_scripts/agentResVariations
 
-for i in {1..30}
+for i in {1..5}
 do
 	echo "Queueing run #$i"
 	qsub NoDev_5_12_12_col.pbs
