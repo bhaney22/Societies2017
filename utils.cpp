@@ -414,25 +414,26 @@ void Utils::saveGini()
     /*
      * Save the gini of all agents into the same file.
      */
-    file << "giniPerAgent,,";   // Leave the first day blank
+    file << "giniPerAgent_"<< glob.SIM_NAME << ",,";   // Leave the first day blank
     vector<double> orderedUtils;
     vector<double> y;
     vector<vector<double> > sumUtilByAgent = glob.otherStats->getSumUtilByAgent();
-    for (int dayNum = 1; dayNum < glob.NUM_DAYS-1; dayNum++) {
+    for (int dayNum = 1; dayNum < glob.NUM_DAYS-1; dayNum++) {//for every day...
         orderedUtils.clear();
-        for (int aId = 0; aId < glob.NUM_AGENTS; aId++) {
+        for (int aId = 0; aId < glob.NUM_AGENTS; aId++) {//for every agent
             if (glob.agent[aId]->inSimulation) {
+                // takes a four-day average (one before, two after) of utility to calculate Gini coefficient
                 orderedUtils.push_back(accumulate(sumUtilByAgent[aId].begin() + dayNum - 1,
-                                                sumUtilByAgent[aId].begin() + dayNum + 2, 0.0));
+                                                sumUtilByAgent[aId].begin() + dayNum + 2, 0.0));// create vector of utilities per agent
             }
         }
-        sort(orderedUtils.begin(), orderedUtils.end());
+        sort(orderedUtils.begin(), orderedUtils.end());//orders utilities smallest to largest
         y.clear();
         for (unsigned int i = 0; i < orderedUtils.size(); i++) {
-            y.push_back(accumulate(orderedUtils.begin(), orderedUtils.begin() + i + 1, 0));
+            y.push_back(accumulate(orderedUtils.begin(), orderedUtils.begin() + i + 1, 0));// seems to be sum of utilities up to a point, cumulative histogram type thing.
         }
-        double B = accumulate(y.begin(), y.end(), 0.0) / (y[y.size()-1] * double(orderedUtils.size()));
-        file << (1.0 + (1.0 / double(orderedUtils.size())) - (2.0 * B)) << ",";
+        double B = accumulate(y.begin(), y.end(), 0.0) / (y[y.size()-1] * double(orderedUtils.size())); // arbitrary variable used in final calc.
+        file << (1.0 + (1.0 / double(orderedUtils.size())) - (2.0 * B)) << ",";// final calculation.
     }
     file << ",\n";      // leave the last day blank
 
