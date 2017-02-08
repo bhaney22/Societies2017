@@ -5,4 +5,4 @@
 
 cd /home/jgsherw/Dahl_Societies_CPP/
 
-./societies -v 1 -s Resultsmin/8/ -p Configs/NoDev_3_8_8.conf -r 8 600 1 -z Configs/agentcsv8.csv -t 3_8_8_nosto_NoDDev | tee runlog_3_8_8.txt
+./societies -v 1 -s Resultsmin/8/ -p Configs/agentmin/NoDev_3_8_8.conf -r 8 600 1 -z Configs/agentcsv8.csv -t 3_8_8_nosto_NoDDev | tee runlog_3_8_8.txt
