@@ -1,0 +1,12 @@
+*****
+***** README File
+***** Initialized by BRH on 03.15.2017
+*****
+
+This source directory was cloned from JGS github Dahl_Societies_CPP on March 15, 2017. 
+
+Chris Weiringa helped and provided this info:
+1.       We cloned John’s github link https://github.com/JohnSherwood7/Dahl_Societies_CPP.git to dahl - /home/brh22/Dahl_Societies_CPP
+2.       If you want to re-clone from github, do the following:
+	a.       cd /home/brh22/Dahl_Societies_CPP/
+	b.       git pull origin master

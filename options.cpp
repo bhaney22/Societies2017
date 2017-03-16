@@ -157,7 +157,7 @@ int parse_args(int argc, char **argv)
              */
             if (glob.configAgentFilename.substr(glob.configAgentFilename.size()-4, 4) == ".csv") {
                 int command;
-                string commandLine = "python ../../conf/hetero_gen_config.py "
+                string commandLine = "python hetero_gen_config.py "
                                     + glob.configAgentFilename + " " + glob.configFilename;
                 command = system(commandLine.c_str());
                 glob.configAgentCSV = glob.configAgentFilename;
@@ -186,7 +186,7 @@ int parse_args(int argc, char **argv)
              * run command line.
              * Since it's running from here, the path is different then before.
              */
-            string commandLine = "python ../../conf/gen_config.py "
+            string commandLine = "python gen_config.py "
                                  + glob.configFilename + " " + configAgentFile;
             command = system(commandLine.c_str());
 

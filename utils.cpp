@@ -31,8 +31,8 @@ using namespace std;
  */
 void Utils::printStartConditions()
 {
-    cout << "Num agents: " << glob.NUM_AGENTS << endl;
     cout << "Num days: " << glob.NUM_DAYS << endl;
+	cout << "Num agents: " << glob.NUM_AGENTS << endl;
     cout << "Num resources: " << glob.NUM_RESOURCES << endl;
 }
 
